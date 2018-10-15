@@ -2,6 +2,7 @@
 This repository contains code make code from url to dict.
 
 
+
 def getUrlDict(current_url):
 
     query = urlsplit(current_url).query
@@ -22,5 +23,7 @@ def getUrlDict(current_url):
 
 
 current_url = request.get_full_path()
+
 url_dict = getUrlDict(current_url)
+
 element = url_dict['element']
